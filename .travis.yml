@@ -12,4 +12,4 @@ before_script:
 - npm install -g bower web-component-tester
 - bower install
 script:
-- xvfb-run wct
+- xvfb-run ./node_modules/.bin/wct
