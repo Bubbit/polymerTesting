@@ -18,6 +18,21 @@ var ret = {
     },
     sauce: {
       disabled: true
+    },
+    istanbul: {
+      dir: './coverage',
+      reporters: ['text-summary', 'lcov'],
+      include: [
+        '/src/**/*.html'
+      ],
+      thresholds: {
+        global: {
+          statements: 80,
+          branches: 80,
+          functions: 90,
+          lines: 80
+        }
+      }
     }
   }
 };
