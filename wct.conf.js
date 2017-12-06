@@ -14,25 +14,10 @@ var ret = {
   suites: ['test/index.html'],
   plugins: {
     local: {
-      browsers: ['chrome']
+      browsers: ['chrome', 'firefox']
     },
     sauce: {
       disabled: true
-    },
-    istanbul: {
-      dir: './coverage',
-      reporters: ['text-summary', 'lcov'],
-      include: [
-        '/src/**/*.html'
-      ],
-      thresholds: {
-        global: {
-          statements: 80,
-          branches: 80,
-          functions: 90,
-          lines: 80
-        }
-      }
     }
   }
 };
