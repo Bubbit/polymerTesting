@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "web-component-tester": "git+https://github.com/Polymer/web-component-tester.git"
   },
   "dependencies": {}
 }
