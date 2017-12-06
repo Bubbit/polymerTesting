@@ -1,0 +1,36 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="polymerTesting-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'polymerTesting-app',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'polymerTesting-app',
+        },
+      },
+
+      coverme: function() {
+        console.log("I NEED TO BE COVERED");
+        if(true) {
+          console.log('IN BEER');
+        } else {
+          console.log("NOT IN BEER")
+        }
+      }
+
+    });
+  </script>
+</dom-module>
