@@ -2,6 +2,6 @@
   "devDependencies": {},
   "dependencies": {
     "web-component-tester": "^6.4.1",
-    "web-component-tester-istanbul": "git+https://github.com/Bubbit/web-component-tester-istanbul.git#master"
+    "wct-istanbub": "0.0.2"
   }
 }

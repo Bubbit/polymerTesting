@@ -19,7 +19,7 @@ var ret = {
     sauce: {
       disabled: true
     },
-    istanbul: {
+    istanbub: {
       dir: './coverage',
       reporters: ['text-summary', 'lcov'],
       include: [
