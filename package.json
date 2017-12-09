@@ -2,6 +2,6 @@
   "devDependencies": {},
   "dependencies": {
     "web-component-tester": "^6.4.1",
-    "wct-istanbub": "0.0.2"
+    "wct-istanbub": "git+https://github.com/Bubbit/wct-istanbub.git#master"
   }
 }
