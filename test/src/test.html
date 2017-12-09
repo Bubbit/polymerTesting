@@ -24,6 +24,11 @@
           var element = fixture('basic');
           assert.equal(element.is, 'polymertesting-app');
         });
+
+        test('fail test', function() {
+          var element = fixture('basic');
+          assert.equal(element.is, 'polymer-app');
+        });
       });
     </script>
   </body>
