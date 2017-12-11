@@ -1,6 +1,6 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
 
-<dom-module id="polymerTesting-app">
+<dom-module id="polymer-testing-app">
   <template>
     <style>
       :host {
@@ -11,26 +11,29 @@
   </template>
 
   <script>
-    Polymer({
+  class PolymerTestingApp extends Polymer.Element {
 
-      is: 'polymerTesting-app',
+    static get is() { return 'polymer-testing-app'; }
 
-      properties: {
+    static get properties() {
+      return {
         prop1: {
           type: String,
           value: 'polymerTesting-app',
-        },
-      },
-
-      coverme: function() {
-        console.log("I NEED TO BE COVERED");
-        if(true) {
-          console.log('IN BEER');
-        } else {
-          console.log("NOT IN BEER")
         }
       }
+    }
 
-    });
+    coverme() {
+      console.log("I NEED TO BE COVERED");
+      if(true) {
+        console.log('IN BEER');
+      } else {
+        console.log("NOT IN BEER")
+      }
+    }
+
+  }
+  window.customElements.define(PolymerTestingApp.is, PolymerTestingApp);
   </script>
 </dom-module>
