@@ -14,7 +14,7 @@
   <body>
     <test-fixture id="basic">
       <template>
-        <polymerTesting-app></polymerTesting-app>
+        <polymer-testing-app></polymer-testing-app>
       </template>
     </test-fixture>
 
@@ -22,7 +22,7 @@
       suite('polymerTesting-app', function() {
         test('instantiating the element works', function() {
           var element = fixture('basic');
-          assert.equal(element.is, 'polymertesting-app');
+          assert.equal(element.constructor.is, 'polymer-testing-app');
         });
       });
     </script>
