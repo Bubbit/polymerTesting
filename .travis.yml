@@ -12,5 +12,5 @@ before_script:
 - npm install -g bower web-component-tester
 - bower install
 script:
-- xvfb-run ./node_modules/.bin/wct --wct.conf-app.js
-- xvfb-run ./node_modules/.bin/wct --wct.conf-element.js
+- xvfb-run ./node_modules/.bin/wct --configFile wct.conf-app.js
+- xvfb-run ./node_modules/.bin/wct --configFile wct.conf-element.js
