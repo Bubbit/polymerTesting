@@ -11,7 +11,7 @@
 var path = require('path');
 
 var ret = {
-  suites: ['test/index.html'],
+  suites: ['test/index-element.html'],
   plugins: {
     local: {
       browsers: ['chrome', 'firefox']
@@ -23,7 +23,7 @@ var ret = {
       dir: './coverage',
       reporters: ['text-summary', 'lcov'],
       include: [
-        '/src/**/*.html'
+        '/components/polymer-testing/*.html'
       ],
       thresholds: {
         global: {
