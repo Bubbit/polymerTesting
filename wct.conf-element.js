@@ -23,7 +23,7 @@ var ret = {
       dir: './coverage',
       reporters: ['text-summary', 'lcov'],
       include: [
-        '/components/polymer-testing/*.html'
+        '*.html'
       ],
       thresholds: {
         global: {
