@@ -14,3 +14,6 @@ before_script:
 script:
 - xvfb-run ./node_modules/.bin/wct --configFile wct.conf-app.js
 - xvfb-run ./node_modules/.bin/wct --configFile wct.conf-element.js
+- cd polymer_3
+- npm i
+- xvfb-run node_modules/.bin/wct
